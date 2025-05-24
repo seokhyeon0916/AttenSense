@@ -33,4 +33,4 @@
     <img src="https://img.shields.io/badge/OpenWrt-00B5E2?style=for-the-badge&logo=OpenWrt&logoColor=black">
     
 ### 프로젝트 아키텍쳐🖼️
-
+<img src="https://github.com/user-attachments/assets/35e6c767-d4e1-49a0-bd84-323d196370c2">
