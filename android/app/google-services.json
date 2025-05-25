@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316890086124",
+    "project_id": "csi-online-attendance-system",
+    "storage_bucket": "csi-online-attendance-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316890086124:android:78e6d79deebf7b1b67c3c9",
+        "android_client_info": {
+          "package_name": "com.example.capston_design"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC83_ihCdQSUjmTNJRqs5yEeaejwxoPwac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

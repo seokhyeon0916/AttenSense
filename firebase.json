@@ -1,0 +1,31 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "csi-online-attendance-system",
+                    "appId": "1:316890086124:android:78e6d79deebf7b1b67c3c9",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "csi-online-attendance-system",
+                    "appId": "1:316890086124:ios:51738bac68f508b267c3c9",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "csi-online-attendance-system",
+                    "configurations": {
+                        "android": "1:316890086124:android:78e6d79deebf7b1b67c3c9",
+                        "ios": "1:316890086124:ios:51738bac68f508b267c3c9",
+                        "web": "1:316890086124:web:65e70699fad4ec9567c3c9"
+                    }
+                }
+            }
+        }
+    }
+}

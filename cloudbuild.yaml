@@ -1,0 +1,32 @@
+steps:
+  # 서버 이미지 빌드
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      ["build", "-t", "gcr.io/$PROJECT_ID/csi-attendance-server", "./server"]
+
+  # 서버 이미지 푸시
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/csi-attendance-server"]
+
+  # Cloud Run 배포
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "csi-attendance-server"
+      - "--image=gcr.io/$PROJECT_ID/csi-attendance-server"
+      - "--platform=managed"
+      - "--region=asia-northeast3" # 서울 리전
+      - "--allow-unauthenticated" # 공개 접근 허용
+      - "--memory=512Mi"
+      - "--min-instances=1"
+      - "--max-instances=5"
+      - "--cpu=1"
+
+# 이미지 저장
+images:
+  - "gcr.io/$PROJECT_ID/csi-attendance-server"
+
+# 배포 시간 제한
+timeout: "1200s"
