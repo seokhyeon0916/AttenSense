@@ -38,3 +38,5 @@
 ### 프로젝트 아키텍쳐🖼️
 
 <img src="https://github.com/user-attachments/assets/02834672-3dfc-4c6e-b5d4-c4ee9f880366">
+
+### 프로젝트 시연영상🖼️
